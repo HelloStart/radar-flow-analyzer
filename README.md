@@ -2,10 +2,10 @@
 
 从 I/Q 到有人/无人判定的嵌入式雷达数据链路可视化学习工具。
 
-当前界面版本：`v0.5`，如下图所示(demo.gif)：
+当前版本：`v0.5`，如下图所示(demo.gif)：
 
 
-![Radar Flow Analyzer 演示](demo.gif)
+![Radar Flow Analyzer 演示](./demo.gif)
 
 ## 功能概览
 
@@ -30,15 +30,15 @@ ADC / I/Q
 - AI 助手：本地 Ollama、DeepSeek、通义千问
 - 真实数据入口：从 ADC/IQ、Doppler FFT 后数据或 Energy 特征开始分析的 TBD 页面
 
-## 数据与边界
 
-核心流程使用可控教学数据，页面会说明输入、矩阵形状、处理步骤、输出和可验证边界。教学仿真不代表任何具体雷达模组的真实硬件性能。
+## 安装和运行
 
-工具独立使用自己的 `knowledge` 目录。运行时不依赖 `docs`；完整 I/Q 数据位于：
+如果使用发布目录中的程序，不需要安装 Python，直接运行：
 
+```text
+dist/RadarFlowAnalyzer_v0.5.exe
 
-
-## 安装
+```
 
 要求 Python 3.11 或更高版本。推荐在工作区根目录执行：
 
@@ -51,7 +51,6 @@ py -3.11 -m pip install -e .
 - `PySide6`：桌面界面
 - `PyYAML`：加载工具知识目录
 
-## 运行
 
 直接运行：
 
@@ -81,14 +80,16 @@ radar-flow-analyzer
 $env:DASHSCOPE_API_KEY = "your-qwen-key"
 $env:DEEPSEEK_API_KEY = "your-deepseek-key"
 ```
-
+也可以在当前对话框临时输入，关闭对话框后不会保存。
 云端发送前需要在界面中确认当前上下文会发送给对应服务。Key 不会写入项目文件。
 
 
 ## License
 
-本项目使用 [MIT License](LICENSE)。允许个人和商业使用、修改和分发，但需要保留许可证文本。
+本项目使用 [MIT License](LICENSE)。
 
-完整的中英文免责声明见 [DISCLAIMER.md](DISCLAIMER.md)。其中的 “AS IS” 表示软件按当前状态提供，不保证没有错误，也不保证适用于特定雷达硬件、房间环境或产品目标；MIT License 不代表对检测准确率、实时性、硬件兼容性或真实场景结果提供保证。
+免责声明 [DISCLAIMER.md](DISCLAIMER.md)。
 
+## 问题反馈
 
+如遇到问题，请提交 Issue，或发送邮件至 [fanqiefox@foxmail.com](mailto:fanqiefox@foxmail.com)
