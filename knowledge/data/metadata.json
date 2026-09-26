@@ -1,0 +1,33 @@
+[
+  {
+    "file": "integer_bin_reference_adc_iq.csv",
+    "source_key": "adc_iq",
+    "scenario": "integer_bin_reference",
+    "shape": [
+      64,
+      128
+    ],
+    "rows": 8192
+  },
+  {
+    "file": "noninteger_bin_demo_adc_iq.csv",
+    "source_key": "adc_iq",
+    "scenario": "noninteger_bin_demo",
+    "shape": [
+      64,
+      128
+    ],
+    "rows": 8192
+  },
+  {
+    "file": "background_weak_target_adc_iq.csv",
+    "source_key": "background_adc_iq,target_adc_iq",
+    "scenario": "background_weak_target",
+    "shape": [
+      2,
+      64,
+      128
+    ],
+    "rows": 16384
+  }
+]

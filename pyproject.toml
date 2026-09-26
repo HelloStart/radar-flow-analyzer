@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radar-flow-analyzer"
+version = "0.1.0"
+description = "A visual learning tool for radar data-chain analysis"
+requires-python = ">=3.11"
+dependencies = [
+    "PySide6>=6.8",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+radar-flow-analyzer = "radar_flow_analyzer.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+radar_flow_analyzer = ["knowledge/*.yaml"]
